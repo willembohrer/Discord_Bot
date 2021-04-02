@@ -24,10 +24,10 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from google.cloud import translate_v2 as TextTranslation
 from cloudmersive_image_api_client.rest import ApiException
 
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-bot = commands.Bot(command_prefix = commands.when_mentioned_or('!'), guild_subscriptions = True, intents = Intents.all())
 Doost_Token = os.getenv('Doost_Token')
 Image_AI_API_Key = os.getenv('Image_AI_API_Key')
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
+bot = commands.Bot(command_prefix = commands.when_mentioned_or('!'), guild_subscriptions = True, intents = Intents.all())
 
 # Globals.
 COUNTER = 0
